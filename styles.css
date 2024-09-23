@@ -1,0 +1,441 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 0;
+    margin-top: 1.2em;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #9F0908;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Economica", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Header Section */
+    .hero-image {
+        height: 100vh;
+        background-image: url("./img/1_hero/JPG/hero_bg.jpg");
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px 160px;
+    }
+
+    .hero-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 112px;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .hero-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1440px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-phone {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    .hero-logo { 
+        width: 64px;
+        height: 64px;
+    }
+
+    .nav-bar a {
+        color: whitesmoke;
+        text-decoration: none;
+        margin: 12px;
+    }
+
+    .nav-bar a:hover {
+        color: #0A141E;
+        text-decoration: underline;
+        transition: 0.4s;
+    }
+
+    .call-button {
+        background-color: #9F0908;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid;
+        border-color: whitesmoke;
+        margin-right: 0;
+    }
+
+    .call-button:hover {
+        text-decoration: none !important;
+        border-color: #0A141E;
+    }
+
+/* How to Order Section */
+    .order-section {
+        margin: 120px 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .order-section h2 {
+        margin: 0 0 64px;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .order-instructions {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .order-steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8px;
+    }
+
+    .order-icons {
+        width: 128px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .order-steps h3 {
+        text-align: center;
+    }
+
+/* Dishes Section */
+    #menu {
+        background-image: url("./img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+        background-size: 100% 100%;
+        padding: 120px 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu h2 {
+        margin: 0 0 64px;
+        text-align: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .dishes {
+        display: flex;
+        position: relative;
+        max-width: 1440px;
+        width: 100%;
+        gap: 80px;
+    }
+
+    .margin-dishes {
+        margin-bottom: 56px;
+    }
+
+    .dish-pic-right {
+        flex-direction: row-reverse;
+    }
+
+    .dish-pics {
+        width: 352px;
+        height: 352px;
+    }
+
+    .dish-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+    }
+
+    .dish-info h3 {
+        margin-bottom: 16px;
+    }
+
+    .dish-prices {
+        font-size: 32px;
+        font-weight: bold;
+        color: #675E54;
+    }
+
+/* Location Section */
+    #locations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 160px 64px;
+    }
+
+    #locations h2 {
+        padding: 0 0 8px;
+        margin: 0;
+    }
+
+    .address {
+        display: flex;
+        align-items: center;
+    }
+
+    .address p {
+        margin: 4px 0;
+    }
+
+    .location-icon {
+        height: 24px;
+        width: auto;
+        margin-right: 4px;
+    }
+
+/* Footer */
+    .footer {
+        background-color: #0A141E;
+        height: 144px;
+        padding: 0 160px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-content {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        height: 144px;
+        max-width: 1440px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        height: 44px;
+    }
+
+    .footer-logo-small {
+        display: none;
+        height: 40px;
+    }
+
+    .footer-socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 136px;
+
+    }
+
+    .footer-socials img {
+        width: 40px;
+        height: 40px;
+    }
+
+/* Media Queries */
+
+/* Max-Width 1024px*/
+/* content padding for Ipad is set here already, weil ab dem Punkt es schon bisschen weird aussah*/
+@media(max-width: 1024px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        padding: 4px 24px;
+    }
+    
+    .nav-res-1024 {
+        display: none;
+    }
+
+    .call-button {
+        font-size: 20px;
+    }
+
+    .order-section {
+        margin: 96px 24px;
+    }
+
+    .order-section h2 {
+        margin: 0 0 48px;
+        font-size: 64px;
+    }
+
+    .order-icons {
+        width: 112px;
+        margin-bottom: 8px;
+    }
+
+    #menu {
+        padding: 96px 24px;
+    }
+
+    #menu h2 {
+        margin: 0 0 48px;
+        font-size: 64px;
+    }
+
+    .dishes {
+        gap: 24px;
+    }
+
+    .margin-dishes {
+        margin-bottom: 56px;
+    }
+
+    .dish-info {
+        width: 60%;
+    }
+
+    .dish-prices {
+        font-size: 24px;
+    }
+
+    #locations {
+        margin: 96px 24px 48px;
+    }
+
+    #locations h2 {
+        font-size: 64px;
+    }
+
+    .footer {
+        padding: 0 24px;
+    }
+}
+
+/* Max Width 600px*/
+@media(max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .call-button {
+        font-size: 16px;
+    }
+
+    .order-section h2 {
+        margin: 0 0 32px;
+        font-size: 40px;
+    }
+
+    #menu {
+        padding: 72px 16px;
+    }
+
+    #menu h2 {
+        margin: 0 0 40px;
+        font-size: 40px;
+    }
+
+    .dishes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #locations h2 {
+        font-size: 40px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-logo-small {
+        display:block;
+    }
+}
+
+/* Max Width 425px */
+@media(max-width: 425px) {
+    .order-section {
+        margin: 72px 16px;
+    }
+    
+    .order-instructions {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0;
+    }
+
+    .dish-info {
+        width: 100%;
+    }
+
+    .footer {
+        height: 86px;
+        padding: 0 16px;
+    }
+
+    .footer-content {
+        height: 86px;
+        padding: 0 16px;
+    }
+
+    .footer-socials img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Max Width 375px*/
+@media(max-width: 375px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    .hero-top {
+        height: 64px;
+    }
+    
+    .hero-logo { 
+        width: 40px;
+        height: 40px;
+    }
+
+    .dish-pics {
+        max-width: 100%;
+        height: auto;
+    } 
+}
